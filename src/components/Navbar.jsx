@@ -22,6 +22,7 @@ const navLinks = [
   { name: "Events", to: "/events", icon: <FaCalendarAlt /> },
   { name: "Mission", to: "/mession", icon: <FaMusic /> },
   { name: "Contact", to: "/contact", icon: <FaEnvelope /> },
+  { name: "Admin", to: "/admin", icon: <FaUserAlt /> },
 ];
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
           {isOpen ? <FiX /> : <FiMenu />}
         </div>
 
-        {/* Logo */}
+        
         <Link
           to="/"
           className="text-3xl md:text-4xl font-extrabold text-orange-600 tracking-wide hover:text-orange-700 transition"
