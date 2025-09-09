@@ -11,6 +11,7 @@ import Gallery from "./page/Gallery";
 import Events from "./page/Events";
 import Contact from "./page/Contact";
 import Mission from "./page/Mission";
+import Admin from "./page/Admin";
 
 const App = () => {
 
@@ -24,7 +25,9 @@ const App = () => {
 
    
         <Routes>
+
           <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin/>} />
      
           <Route path="/about" element={<About />} />
           <Route path="/bhajans" element={<Bhajans />} />
