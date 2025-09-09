@@ -34,7 +34,7 @@ const Contact = () => {
         () => {
           alert("✅ Email sent successfully!");
           const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-          const whatsappLink = `https://wa.me/7667676282?text=${whatsappMessage}`;
+          const whatsappLink = `https://wa.me/9660000146?text=${whatsappMessage}`;
           window.open(whatsappLink, "_blank");
           form.current.reset();
         },
@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative px-4 py-28 sm:px-8 lg:px-10 bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 min-h-[110vh] overflow-hidden">
+    <section className="relative px-4 py-28 sm:px-8 lg:px-10 bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 min-h-[120vh] overflow-hidden">
       {/* Glowing Blobs */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-orange-300 opacity-20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-[-80px] right-[-80px] w-72 h-72 bg-yellow-300 opacity-20 rounded-full blur-3xl animate-pulse" />
@@ -63,7 +63,7 @@ const Contact = () => {
           className="text-4xl font-extrabold text-orange-600 text-center mb-8"
           variants={fadeVariant}
         >
-          📬 Let's Connect
+          📬 Let's Connect our mission to uplift, educate, and empower girls
         </motion.h2>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
@@ -139,7 +139,7 @@ const Contact = () => {
           custom={4}
         >
           <a
-            href="https://wa.me/7667676282"
+            href="https://wa.me/9660000146"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 transition"
@@ -156,6 +156,42 @@ const Contact = () => {
             <FaInstagram className="text-lg" />
             Instagram
           </a>
+        </motion.div>
+
+        {/* Donation Section */}
+        <motion.div
+          className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-yellow-100 via-orange-50 to-yellow-100 border border-orange-200 shadow-lg text-center"
+          variants={fadeVariant}
+          custom={5}
+        >
+          <h3 className="text-2xl font-bold text-orange-700 mb-3">
+            🌸 Support Our Mission
+          </h3>
+          <p className="text-gray-600 mb-6 max-w-md mx-auto">
+            Your contribution helps us educate, empower, and uplift
+            underprivileged girls through the{" "}
+            <strong>"Save Girl, Support Girl"</strong> movement.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            {/* UPI Donation Button */}
+            <a
+              href="upi://pay?pa=your-upi-id@upi&pn=SadhviSamahitaJi&cu=INR"
+              className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl shadow-md transition"
+            >
+              💳 Donate via UPI
+            </a>
+
+            {/* Bank / PayPal Link */}
+            <a
+              href="https://your-donation-link.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-xl shadow-md transition"
+            >
+              🌍 Donate Online
+            </a>
+          </div>
         </motion.div>
       </motion.div>
     </section>

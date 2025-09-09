@@ -20,6 +20,7 @@ const navLinks = [
   { name: "Videos", to: "/videos", icon: <FaVideo /> },
   { name: "Gallery", to: "/gallery", icon: <FaImages /> },
   { name: "Events", to: "/events", icon: <FaCalendarAlt /> },
+  { name: "Mission", to: "/mession", icon: <FaMusic /> },
   { name: "Contact", to: "/contact", icon: <FaEnvelope /> },
 ];
 

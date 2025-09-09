@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import img from "../assets/image.png"; 
 import bgVideo from "../assets/video.mp4"; 
 import SplitText from "../../reactbits/SplitText/SplitText"; 
+import Mission from "./Mission";
 
 const Home = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -166,6 +167,7 @@ const Home = () => {
         { id: "videos", bg: "bg-orange-50", Component: Videos },
         { id: "gallery", bg: "bg-yellow-50", Component: Gallery },
         { id: "events", bg: "bg-orange-50", Component: Events },
+        { id: "mission", bg: "bg-white", Component: Mission },
         { id: "contact", bg: "bg-white", Component: Contact },
       ].map(({ id, bg, Component }) => (
         <motion.section

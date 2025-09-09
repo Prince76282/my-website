@@ -10,6 +10,7 @@ import Videos from "./page/Videos";
 import Gallery from "./page/Gallery";
 import Events from "./page/Events";
 import Contact from "./page/Contact";
+import Mission from "./page/Mission";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
      
           <Route path="/about" element={<About />} />
           <Route path="/bhajans" element={<Bhajans />} />
+          <Route path="/mession" element={<Mission />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />

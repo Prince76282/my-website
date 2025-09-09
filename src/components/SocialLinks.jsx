@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const SocialLinks = () => (
   <div className="flex justify-center gap-6">
     <a
-      href="https://wa.me/7667676282"
+      href="https://wa.me/9660000146"
       target="_blank"
       rel="noopener noreferrer"
       className="text-green-600 hover:text-green-700 text-2xl transition-transform hover:scale-110"
